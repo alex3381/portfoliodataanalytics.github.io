@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+
+
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">PORTFOLIO</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">DATA ANALYSIS</a></li>
+							<li><a href="generic.html">SQL</a></li>
+							<li class="active"><a href="elements.html">SOFTWARE DEVELOPMENT</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Featured Post Second project-->
+<article class="post featured">
+	<header class="major">
+		<span class="date">December 15, 2019</span>
+		<h2><a href="https://github.com/alex3381/Data-Analysis">VIVIDLAUNCH E-COMMERCE HUB</a></h2>
+		<p><b>Overview:</b>The Onboard_Screen class represents the onboarding screen of an application. Here are the key features:
+
+			Animation: The screen includes animations using the AnimationController and Animation<double> to control the scale of an element. The animation triggers a transition to another screen using the PageTransition widget.
+			
+			Background Image: The background of the onboarding screen is set using an image loaded from the assets.
+			
+			Text and Animated Text: Various texts are displayed on the onboarding screen, and an AnimatedTextKit is used to animate text elements.
+			
+			Get Started Button: A button is provided to initiate the transition to the next screen. The button scales up when pressed.<br />
+		
+<p><b>Key Components:</b> The RegisterPage class represents a registration page in the application. Key features include:
+
+	Form: The class contains a registration form with fields for username, email, password, and password confirmation.
+	
+	Password Visibility Toggle: The password field includes an icon to toggle the visibility of the entered password.
+	
+	Registration Button: A button is provided for user registration. Currently, the onPressed function is empty and needs to be implemented to handle the registration logic.
+	
+	Social Register: Icons for different social media platforms are displayed, but their functionality is implemented.</p>
+
+
+
+	
+			</header>
+	<a href="https://github.com/alex3381/Ecommerce-Application"></a>
+	<a><video video width="320" height="240" controls autoplay muted loop>
+		<source src=”https://github.com/alex3381/Ecommerce-Application” type=video/ogg>
+		<source src="images/second.mp4" type=video/mp4>
+	  </video></a>
+
+	  <p><b>General Observations:</b> The styling is implemented using a combination of TextStyle and the GoogleFonts package for custom fonts.
+
+		Navigation: The code utilizes the Navigator class for screen transitions.
+		
+		Asset Loading: Images and GIFs are loaded from the assets using AssetImage.
+		
+		Animation Control: The AnimationController and associated widgets are used for various animations throughout the code.
+		
+		Form Handling: The RegisterPage includes form controllers for handling user input during registration.
+		
+		Functionality Gaps: Certain functionality, such as handling registration logic, is not fully implemented and requires additional coding.
+		
+		Overall, the provided code demonstrates the implementation of onboarding screens, registration forms, and splash screens with animations in a Flutter application....</p>
+	<ul class="actions special">
+		<li><a href="https://github.com/alex3381/Ecommerce-Application" class="button primary">VIEW PROJECT</a></li>
+	</ul>
+</article>
+
+
+
+
+	  
+
+<!-- Featured Post Second project-->
+<article class="post featured">
+	<header class="major">
+		<span class="date">June 25, 2020</span>
+		<h2><a href="https://github.com/alex3381/Data-Analysis">NEWS APP WITH API INTEGRATION</a></h2>
+		<p><b>Overview:</b>The provided Dart code showcases the integration of a WebView in a Flutter application designed for a news platform. The primary goal is to enable users to view articles within the app, enhancing the overall user experience. The code employs the webview_flutter package to seamlessly embed web content and provides a structured user interface using Flutter's material design.<br />
+		
+<p><b>Key Components:</b> The code relies on the following dependencies:
+
+	dart:async: Utilized for handling asynchronous programming.
+	flutter/material.dart: Incorporates material design components to build the app's UI.
+	google_fonts: Allows the use of Google Fonts for text styling.
+	webview_flutter: A Flutter package facilitating the embedding of web content using WebView.</p>
+
+	</header>
+	<a href="https://github.com/alex3381/News-App-API-Integration" >
+		
+		<video video width="320" height="240"poster="/images/poster.png" controls autoplay muted loop>
+			<source src="movie.mp4" type="video/mp4">
+			<source src="images/new-video.mp4" type="video/ogg">
+			Your browser does not support the video tag.
+		 </video></a>
+
+	  <p><b>Widget Structure:</b> The primary widget, ArticleViews, extends StatefulWidget and takes the article URL as a parameter in its constructor. This widget is responsible for displaying the WebView within the app.
+
+		WebView Implementation
+		The _ArticleViewsState class encapsulates the logic for WebView integration. It utilizes a Completer<WebViewController> named _completer to control the WebView instance. The Scaffold widget contains an AppBar with branding ("Naija News") and a placeholder icon. The main body consists of a Container housing the WebView, initialized with the provided article URL.
+		
+		App Flow
+		Scaffold Structure: The app follows the standard structure of a Flutter app with a Scaffold containing an AppBar and a body.
+		
+		AppBar: The app bar is adorned with branding text ("Naija News") and includes a placeholder icon for potential future actions.
+		
+		Container with WebView: The core of the app is a Container holding a WebView. The WebView is configured with the initial URL of the article. The onWebViewCreated callback ensures that the _completer is completed when the WebView is created</p>
+		<p>The integration of a WebView in a Flutter news app provides users with a seamless way to view articles without leaving the application. The use of the webview_flutter package simplifies the embedding of web content, and the overall UI, characterized by material design elements, ensures a visually appealing and user-friendly experience.
+
+			Developers can leverage this code as a foundation and further customize the app's UI, add features such as navigation controls, share options, or implement offline reading capabilities. The extensibility of Flutter allows for flexibility in tailoring the app to meet the specific requirements and preferences of both developers and end-users. Overall, this code serves as a valuable starting point for building a feature-rich news application in Flutter....</p>
+	<ul class="actions special">
+		<li><a href="https://github.com/alex3381/News-App-API-Integration" class="button primary">VIEW PROJECT</a></li>
+	</ul>
+</article>
+
+<!-- ///////////// -->
+
+
+<!-- Featured Post Second project-->
+<article class="post featured">
+	<header class="major">
+		<span class="date">September 25, 2020</span>
+	  <h2><a href="https://github.com/alex3381/Data-Analysis">ECOMMERCE NATIVE APPLICATION</a></h2>
+	  <p><b>Overview:</b> The provided Dart code initializes a Flutter application, ensuring that the application is ready for rendering and that certain preferences are set. Additionally, the code implements theming functionality using the ChangeNotifierProvider for a dark/light mode toggle.</p>
+		
+<p><b>Key Components:</b> The WebMainPage widget serves as a central hub for organizing and displaying various components in a Flutter web application. Its modular structure, theming capabilities, and responsiveness make it a fundamental part of creating an engaging and user-friendly web experience using Flutter. The integration of slivers, stacks, and multiple sections demonstrates a sophisticated approach to web application design with Flutter.</p>
+
+
+
+	
+			</header>
+	<a href="https://github.com/alex3381/Shopify-Stores" class="responsive-image img">
+		
+		<!-- <img src="images/new app.png" alt="" /></a> -->
+	<a><video video width="320" height="240" controls autoplay muted loop>
+		<source src=”https://github.com/alex3381/Shopify-Stores” type=video/ogg>
+		<source src="images/shopify web.mp4" type=video/mp4>
+	  </video></a>
+
+	  <a><video video width="320" height="240" controls autoplay muted loop>
+		<source src=”https://github.com/alex3381/Shopify-Stores” type=video/ogg>
+		<source src="images/SHOPIFY_MOBILE.mp4" type=video/mp4>
+	  </video></a>
+
+	  <p><b>Main Function:</b>The main function is the entry point of the application. Key elements include:
+
+		Asynchronous Initialization: The main function is marked as async, allowing the use of await for asynchronous operations.
+		
+		System Configuration: The system configurations include enabling dithering for paint and setting the preferred orientation to portrait mode.
+		
+		SharedPreferences: An instance of SharedPreferences is used to retrieve a boolean value indicating the selected theme (dark or light). If no value is found, it defaults to false (light mode).
+		
+		ThemeProvider Initialization: The ChangeNotifierProvider is used to create an instance of ThemeProvider with the retrieved theme preference. This provider will be accessible to the entire widget tree.
+		
+		Run Application: The runApp function initiates the application by providing it with the root widget (MyApp).
+		
+		MyApp Class
+		The MyApp class is a StatefulWidget that returns an instance of _MyAppState.
+		
+		_MyAppState Class
+		The _MyAppState class extends State<MyApp> and is responsible for building the widget tree of the application.
+		
+		MultiProvider
+		The MultiProvider widget is used to provide multiple instances of ChangeNotifierProvider. In this case, it provides instances of ProductProvider and PanoramaImageProvider. These providers are accessible to the widget tree and can be used to manage the state of their respective features.
+		
+		Consumer<ThemeProvider>
+		The Consumer widget listens to changes in the ThemeProvider and rebuilds its child widget when the theme changes. It provides access to the current theme to its descendants.
+		
+		MaterialApp
+		The MaterialApp widget represents the root of the widget tree for the entire application. Key properties include:
+		
+		Title: The title of the application.
+		
+		Theme: The theme is determined by the current state of the ThemeProvider. It dynamically switches between dark and light themes based on user preference.
+		
+		Scroll Behavior: The scrollBehavior property is customized to allow scrolling on various pointer devices, such as mouse, touch, stylus, and unknown devices.
+		
+		Debug Banner: The debug banner is hidden.
+		
+		Home: The home screen is set to WebMainPage(), indicating that the initial page of the application is WebMainPage</p>
+		<p>This Flutter code serves as a well-organized and structured entry point for a mobile application. It incorporates best practices for initialization, system configuration, and theming using the provider pattern. The use of providers for state management allows for efficient and scalable development, making it easy to extend the application's features while maintaining a clean and maintainable codebase....</p>
+	<ul class="actions special">
+		<li><a href="https://github.com/alex3381/News-App-API-Integration" class="button primary">VIEW PROJECT</a></li>
+	</ul>
+</article>
+
+
+
+<!-- Featured Post Second project-->
+<article class="post featured">
+	<header class="major">
+		<span class="date">March 5, 2021</span>
+		
+
+
+
+
+
+	  <h2><a href="https://github.com/alex3381/Interior-Decorations/tree/master/frontend_web_mobile/alexander">NeumoCart Mobile Application/Web Platform</a></h2>
+	  <p><b>Overview:</b> The provided Dart code initializes a Flutter application, ensuring that the application is ready for rendering and that certain preferences are set. Additionally, the code implements theming functionality using the ChangeNotifierProvider for a dark/light mode toggle.</p>
+		
+<p><b>Key Components:</b> Before production, delve into a Dart code snippet that represents a Flutter application. The code showcases key components and functionalities, offering insights into its structure and purpose. Let's take a closer look at the main features of this app.</p>
+
+
+
+	
+			</header>
+	<a href="https://github.com/alex3381/Interior-Decorations/tree/master/frontend_web_mobile/alexander" class="responsive-image img">
+		
+
+	  <a><video video width="320" height="240" controls autoplay muted loop>
+		<source src=”https://github.com/alex3381/Interior-Decorations/tree/master/frontend_web_mobile/alexander” type=video/ogg>
+		<source src="images/Fatogun.mp4" type=video/mp4>
+	  </video></a>
+
+	  <p><b>App Structure Overview:</b>The provided code suggests the development of a Flutter application, presumably tailored for an e-commerce platform. Notably, the inclusion of product-related classes and UI components hints at its functionality in managing and displaying products</p>
+		<p><b>HomeCardProduct Class:</b>The HomeCardProduct class stands out as a fundamental model within the application. It defines various properties crucial for home card products, such as id, title, cardColor1, cardColor2, productDescription, price, imageUrl, and imageUrl2. With a constructor and a factory method for creating instances from JSON, this class plays a central role in representing and handling product data.</p>
+	<p><b>ContructorServices Class:</b> The ContructorServices class extends GetxController, indicating its involvement in managing services within the application. During initialization, it takes screenSize as a parameter and prints it in the onInit method. This class likely oversees vital services integral to the app's functionality....</p>
+	<ul class="actions special">
+		<li><a href="https://github.com/alex3381/News-App-API-Integration" class="button primary">VIEW PROJECT</a></li>
+	</ul>
+</article>
+
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
